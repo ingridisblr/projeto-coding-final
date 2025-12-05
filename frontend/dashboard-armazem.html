@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Armazém - AgroSustenta</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="dashboard-header-light">
+        <nav class="dashboard-nav">
+            <div class="nav-left">
+                <a href="perfil.html" class="dashboard-link">
+                    <span class="icon-arrow-left">❮</span> VOLTAR
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="login.html" class="dashboard-login-button">
+                    <span class="icon-person">👤</span> LOGIN
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="dashboard-main" id="armazem-main">
+        <div class="dashboard-content">
+
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <h3>Seu Dashboard</h3>
+                        <p>Analise seu desempenho</p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="action-button"><span class="icon">🗑️</span> Delete</button>
+                        <button class="action-button"><span class="icon">Filters</span></button>
+                        <button class="action-button"><span class="icon">📤</span> Export</button>
+                        <button class="action-button primary-action"><span class="icon">➕</span> Add new CTA</button>
+                    </div>
+                </div>
+                
+                <div class="chart-image-container">
+                    <img src="graficos_lotes_ativos-removebg-preview.png" alt="Gráficos de Estoque e Saídas" class="full-width-chart">
+                </div>
+            </div>
+
+            <div class="dashboard-card armazem-table-card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <h3>Saídas Recentes de Lotes</h3>
+                    </div>
+                    <div class="card-actions">
+                        <button class="action-button">Delete</button>
+                        <button class="action-button">Filters</button>
+                        <button class="action-button">Export</button>
+                        <button class="action-button primary-action">Add new CTA</button>
+                    </div>
+                </div>
+                
+                <div class="armazem-table-container">
+                    <div class="armazem-grid">
+                        <div class="armazem-cell header-cell">Data de Saída ↓</div>
+                        <div class="armazem-cell header-cell">Código do Lote ↓</div>
+                        <div class="armazem-cell header-cell">Espécie da Semente ↓</div>
+                        <div class="armazem-cell header-cell">Quantidade (kg) ↓</div>
+                        <div class="armazem-cell header-cell">Destino ↓</div>
+
+                        <div class="armazem-cell">02/11/2025</div>
+                        <div class="armazem-cell">LT-002</div>
+                        <div class="armazem-cell">Milho Híbrido</div>
+                        <div class="armazem-cell">180</div>
+                        <div class="armazem-cell">Produtor João Campos</div>
+
+                        <div class="armazem-cell">04/11/2025</div>
+                        <div class="armazem-cell">LT-006</div>
+                        <div class="armazem-cell">Feijão Carioca</div>
+                        <div class="armazem-cell">200</div>
+                        <div class="armazem-cell">Cooperativa Verde Vida</div>
+
+                        <div class="armazem-cell">07/11/2025</div>
+                        <div class="armazem-cell">LT-010</div>
+                        <div class="armazem-cell">Arroz Branco</div>
+                        <div class="armazem-cell">150</div>
+                        <div class="armazem-cell">Produtor José Mendes</div>
+                    </div>
+
+                    <div class="status-row">
+                        <div class="status-label">Status:</div>
+                        <div class="status-values">
+                            <span>Entregue</span>
+                            <span>Em rota</span>
+                            <span>Entregue</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+        </div> 
+    </main>
+
+</body>
+</html>
